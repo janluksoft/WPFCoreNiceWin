@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Image\MyEgy2447.ico" />
+    <None Remove="Resources\Png\newFile.png" />
+    <None Remove="Resources\Png\openFile.png" />
+    <None Remove="Resources\Png\openFolder.png" />
+    <None Remove="Resources\Png\preferences.png" />
+    <None Remove="Resources\Png\saveFile.png" />
+    <None Remove="Resources\Png\saveFileAs.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Resources\scrollbar.xaml" />
+    <Page Remove="Resources\ThemeDark1.xaml" />
+    <Page Remove="Resources\ThemeLight1.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="WpfLibNice">
+      <HintPath>..\WpfLibNice\bin\Debug\net5.0-windows\WpfLibNice.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Image\MyEgy2447.ico" />
+    <Resource Include="Resources\Png\newFile.png" />
+    <Resource Include="Resources\Png\openFile.png" />
+    <Resource Include="Resources\Png\openFolder.png" />
+    <Resource Include="Resources\Png\preferences.png" />
+    <Resource Include="Resources\Png\saveFile.png" />
+    <Resource Include="Resources\Png\saveFileAs.png" />
+  </ItemGroup>
+
+</Project>
